@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grimório Cósmicos dos Signos</title>
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+   
+  </head>
+
+  <body>
+     <link rel="stylesheet" href="projeto-magickai/src/imagens/fundo tela.png">
+    <header class="cabecalho">
+      <img src="./src/imagens/logotipo.png" alt="Minha imagem selo" class="imagem-selo"/>
+    </header>
+   
+  
+    <main class="container">
+    <h1 class="produtos">Produtos</h1>
+      <div class="filtros">
+        <div class="categorias-cartas">
+          <label for="categoria">Categoria</label>
+          <select id="categoria" class="categoria">
+            <option value="">Selecione uma carta</option>
+            <option value="fogo">Fogo</option>
+            <option value="água">Água</option>
+            <option value="terra">Terra</option>
+            <option value="ar">Ar</option>
+          </select>
+        </div>
+        <div class="preco-cartas">
+          <label for="preco">Preço máximo (R$)</label>
+          <input type="text" id="preco" class="preco" placeholder="Ex: 100" />
+        </div>
+        <button class="btn-filtrar">Aplicar filtros</button>
+      </div>
+      <ul class="cartas">
+        <li class="carta" data-categoria="Fogo" 
+        data-preco="4.500,00">
+          <img src="./src/imagens/áries.png" alt="Carta Áries" />
+
+          <div class="informacoes">
+            <h2 class="nome-personagem">Áries</h2>
+            <span class="categoria">Categoria: Fogo</span>
+            <span class="preco">R$ 4.500,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Áries!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Terra"
+         data-preco="3.000,00">
+          <img src="./src/imagens/touro.png" alt="Carta Touro" />
+          <div class="informacoes">
+            <h2 class="nome-personagem">Touro</h2>
+            <span class="categoria">Categoria: Terra</span>
+            <span class="preco">R$ 3.000,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Touro!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Ar" 
+        data-preco="800,00">
+          <img src="./src/imagens/gemeeos.png" alt="Carta Gêmeos" />
+          <div class="informacoes">
+            <h2 class="nome-personagem">Gêmeos</h2>
+            <span class="categoria">Categoria: Ar</span>
+            <span class="preco">R$ 800,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Gêmeos!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Água"
+           data-preco="1.500,00">
+          <img src="./src/imagens/câncer.png" alt="Carta Câncer" />
+          <div class="informacoes">
+            <h2 class="nome-personagem">Câncer</h2>
+            <span class="categoria">Categoria: Água</span>
+            <span class="preco">R$ 1.500,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Câncer!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Fogo" 
+           data-preco="2.000,00">
+          <img src="./src/imagens/leao.png" alt="Carta Leão" />
+          <div class="informacoes">
+            <h2 class="nome-personagem">Leão</h2>
+            <span class="categoria">Categoria: Fogo</span>
+            <span class="preco">R$ 2.000,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Leão!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Terra"             data-preco="400,00"> 
+          <img src="./src/imagens/virgem.png" alt="Carta Virgem" />
+          <div class="informacoes">
+            <h2 class="nome-personagem">Virgem</h2>
+            <span class="categoria">Categoria: Terra</span>
+            <span class="preco">R$ 400,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Virgem!" class="btn-comprar" target="_blank">Comprar</a>
+          </div>
+        </li>
+
+        <li class="carta" data-categoria="Ar"
+        data-preco="500,00">
+      <img src="./src/imagens/libra.png" alt="Carta Libra"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Libra</h2>
+            <span class="categoria">Categoria: Ar</span>
+            <span class="preco">R$ 500,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Libra!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+
+
+        <li class="carta" data-categoria="Água"
+        data-preco="900,00">
+      <img src="./src/imagens/escorpiao.png" alt="Carta Escorpião"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Escorpião</h2>
+            <span class="categoria">Categoria: Ar</span>
+            <span class="preco">R$ 900,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Escorpião!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+
+       <li class="carta" data-categoria="Fogo"
+        data-preco="700,00">
+      <img src="./src/imagens/sagitario.png" alt="Carta Sagitário"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Sagitário</h2>
+            <span class="categoria">Categoria: Fogo</span>
+            <span class="preco">R$700,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Sagitário!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+
+       <li class="carta" data-categoria="Terra"
+        data-preco="1.600,00">
+      <img src="./src/imagens/capricornio.png" alt="Carta Capricórnio"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Capricórnio</h2>
+            <span class="categoria">Categoria: Terra</span>
+            <span class="preco">R$ 1.600,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Capricórnio!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+
+      <li class="carta" data-categoria="Ar"
+        data-preco="1.100,00">
+      <img src="./src/imagens/aquario.png" alt="Carta Aquário"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Aquário</h2>
+            <span class="categoria">Categoria: Ar</span>
+            <span class="preco">R$ 1.100,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Aquário!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+
+      <li class="carta" data-categoria="Água"
+        data-preco="5.000,00">
+      <img src="./src/imagens/peixes.png" alt="Carta Peixes"/>
+          <div class="informacoes">
+            <h2 class="nome-personagem">Peixes</h2>
+            <span class="categoria">Categoria: Água</span>
+            <span class="preco">R$ 5.000,00</span>
+            <a href="http://wa.me/5551980521559?text=Olá, quero comprar a carta Peixes!" class="btn-comprar"
+            target="_blank">Comprar</a>
+          </div>
+      </li>
+      </ul>
+    </main>
+    <footer class="rodape">@2025 - Todos os direitos reservados</footer>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
