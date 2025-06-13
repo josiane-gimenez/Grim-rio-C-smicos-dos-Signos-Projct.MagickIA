@@ -1,0 +1,61 @@
+/* Estilos gerais */
+.imagem-selo {
+    width: 200px;  /* Tamanho de um selo pequeno */
+    height: 200px; /* Faz a imagem quadrada */
+    object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer, cortando o excesso */
+   
+    border-radius: 5px; /* Bordas levemente arredondadas, opcional */
+    
+}
+
+/* Seus estilos responsivos existentes */
+@media(max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+    /* ... seus outros estilos ... */
+}
+
+@media(max-width: 480px) {
+    /* ... seus outros estilos ... */
+}
+
+
+@media(max-width: 1024px) {
+    .container {
+        padding: 20px;
+
+    }
+    .container h1 {
+
+        text-align: center;
+    }
+    .container .filtros {
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .container .filtros .categorias-cartas,
+    .container .filtros .preco-cartas,
+    .container .filtros .btn-filtrar {
+        width:65%;
+    }
+
+    .container .filtros .btn-filtrar {
+        align-self: center;
+    }
+
+    .container .cartas {
+        justify-content: center;
+    }
+}
+
+@media(max-width: 480px) {
+    .container .filtros .categorias-cartas, 
+    .container .filtros .preco-cartas,
+    .container .btn-filtrar {
+        width: 100%;}
+}
